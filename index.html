@@ -6,77 +6,59 @@
   <title>Ferretería Del Plata</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0; }
-    header { background-color: #333; color: white; padding: 20px; text-align: center; }
-    nav { background-color: #444; padding: 10px; text-align: center; }
+    header, footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #444; text-align: center; padding: 10px; }
     nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .hero { padding: 40px; text-align: center; background-color: #ddd; }
-    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
-    .producto { background-color: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    form { max-width: 400px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; }
-    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
-    form button { padding: 10px 20px; }
-    footer { background-color: #333; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    .galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .foto { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; max-width: 300px; }
+    .foto img { width: 100%; border-radius: 8px; }
   </style>
 </head>
 <body>
   <header>
     <h1>Ferretería Del Plata</h1>
-    <p>Todo para tu hogar y obra, en un solo lugar</p>
+    <p>Todo para tu hogar y obra</p>
   </header>
   <nav>
-    <a href="#productos">Productos</a>
-    <a href="#nosotros">Sobre Nosotros</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#carrito">Carrito</a>
+    <a href="#">Inicio</a>
+    <a href="#galeria">Fotos</a>
+    <a href="https://wa.me/541137683815?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank">WhatsApp</a>
   </nav>
-  <section class="hero">
-    <h2>Bienvenido a Ferretería Del Plata</h2>
-    <p>Herramientas, materiales, pinturas, electricidad, plomería y más. Calidad, variedad y confianza desde siempre.</p>
-  </section>
-  <section class="productos" id="productos">
-    <div class="producto">
-      <h3>Herramientas Eléctricas</h3>
-      <p>Taladros, amoladoras, sierras y más. Potencia y rendimiento.</p>
+  <section id="galeria" class="galeria">
+    
+    <div class="foto">
+      <img src="img/66809547-0b38-4ade-b27e-d897d2215785.jpg" alt="Frente del local">
+      <p>Frente del local</p>
     </div>
-    <div class="producto">
-      <h3>Materiales de Construcción</h3>
-      <p>Cementos, adhesivos, pastinas y productos para obra.</p>
+    
+    <div class="foto">
+      <img src="img/6f219d29-54c1-456b-9094-2600b2b1d91a.jpg" alt="Mostrador con productos">
+      <p>Mostrador con productos</p>
     </div>
-    <div class="producto">
-      <h3>Pinturas y Accesorios</h3>
-      <p>Interiores, exteriores, esmaltes y pinceles de calidad.</p>
+    
+    <div class="foto">
+      <img src="img/0a6907ca-cac5-424a-867f-02ccb56af496.jpg" alt="Panorámica del interior">
+      <p>Panorámica del interior</p>
     </div>
-    <div class="producto">
-      <h3>Ferretería General</h3>
-      <p>Tornillos, clavos, tuercas, bisagras y todo lo que necesitás.</p>
+    
+    <div class="foto">
+      <img src="img/31e161ad-e476-43ec-a49e-a15298db3537.jpg" alt="Sección de pinturas">
+      <p>Sección de pinturas</p>
     </div>
-  </section>
-  <section id="carrito" style="padding: 20px; text-align: center;">
-    <h2>Hacé tu pedido</h2>
-    <form action="mailto:laplataferreteria@hotmail.com.ar" method="post" enctype="text/plain">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <textarea name="pedido" placeholder="¿Qué productos querés?" rows="4" required></textarea>
-      <button type="submit">Enviar Pedido</button>
-    </form>
-  </section>
-  <section id="nosotros" style="padding: 20px; text-align: center;">
-    <h2>Sobre Nosotros</h2>
-    <p>Ferretería Del Plata es un comercio de confianza con años de trayectoria en el barrio. Ofrecemos atención personalizada, productos de primera y soluciones para todos tus proyectos.</p>
-  </section>
-  <section id="contacto" style="padding: 20px; text-align: center;">
-    <h2>Contacto</h2>
-    <p>📞 Teléfono: Próximamente</p>
-    <p>📍 Dirección: Av. La Plata 1501</p>
-    <p>✉️ Email: laplataferreteria@hotmail.com.ar</p>
-  </section>
-  <section style="text-align:center; padding:20px;">
-    <a href="https://wa.me/541137683815?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Ferretería%20Del%20Plata" target="_blank" style="display:inline-block; background-color:#25D366; color:white; padding:15px 25px; border-radius:5px; text-decoration:none; font-size:18px;">
-      🟢 Pedir por WhatsApp
-    </a>
+    
+    <div class="foto">
+      <img src="img/12089f93-c54e-4fa6-8514-9989cf31288a.jpg" alt="Estantería de herramientas">
+      <p>Estantería de herramientas</p>
+    </div>
+    
+    <div class="foto">
+      <img src="img/WhatsApp Image 2025-02-03 at 1.59.26 PM (1).jpeg" alt="Local de noche">
+      <p>Local de noche</p>
+    </div>
+    
   </section>
   <footer>
-    <p>&copy; 2025 Ferretería Del Plata. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Ferretería Del Plata</p>
   </footer>
 </body>
 </html>
